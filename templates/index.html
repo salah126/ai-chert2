@@ -731,7 +731,8 @@
         <div class="password-box">
             <div class="logo-container">
                 <!-- ضع رابط اللوجو الخاص بك هنا -->
-                <img src="{{ url_for('static', filename='1.jpg') }}" alt="صقور التداول" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                 <img src="1.jpg" alt="صقور التداول" 
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                 <div style="display: none; width: 100%; height: 100%; background: var(--gradient-2); border-radius: 15px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2em;">
                 </div>
             </div>
@@ -771,7 +772,8 @@
         <div class="header">
             <div class="logo-container">
                 <!-- ضع رابط اللوجو الخاص بك هنا -->
-                <img src="{{ url_for('static', filename='1.jpg') }}" alt="صقور التداول" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                 <img src="1.jpg" alt="صقور التداول" 
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                 <div style="display: none; width: 100%; height: 100%; background: var(--gradient-2); border-radius: 15px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1em;">
                 </div>
             </div>
@@ -945,12 +947,7 @@
                 - الاتجاه العام: (كلمة أو كلمتين فقط مع سبب مختصر)
                 - نوع الصفقة: (شراء / بيع )
                 - نقطة الدخول: (اكتب السعر أو المستوى المتوقع بالأرقام مثل 1.2543 أو 1932.50، مع السبب مثل اختبار / ارتداد / كسر)
-                - المدة: (استنتج الفريم من الوقت المكتوب بجانب الشمعة الحالية في الصورة:
-                • إذا كان الوقت بين 00:01 و00:59 → فريم 1 دقيقة (1M)
-                • إذا كان بين 01:00 و04:59 → فريم 5 دقائق (5M)
-                • إذا كان بين 05:00 و14:59 → فريم 15 دقيقة (15M)
-                • إذا كان أكبر من 14:59 → فريم 1 ساعة (1H)
-                ثم اختر مدة الصفقة المناسبة لذلك الفريم)`);
+                `);
 
                 const response = await fetch('/ask', {
                     method: 'POST',
