@@ -33,7 +33,7 @@ def ask():
 
     try:
         response = client.models.generate_content(
-            model="gemini-3-pro-image",
+            model="gemini-2.5-pro",
             contents=content
         )
         answer = response.text
